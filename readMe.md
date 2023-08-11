@@ -21,7 +21,7 @@ The inventory has a table of the inventory with name, type, rating, and price, w
 * Baked good entries have specific id's that can be accessed with certain URLs
 * Baked goods, database credentials, admin credentials, page fetching, csv parser, login session timing are all classes. Baked goods have attributes related to sweets while the rest have attributes for functionality, as well as methods that can be called to perform tasks related to their name (like logging into a database for the database credentials class).
 * My website uses inheritance to create wrapper classes so that if needed, multiple objects can utilize a database framework.
-* Pages are fetched with mySQL dynamically from the database upon request and do not allow null page crossing
+* There is a page widget with page numbers for arbitrary traversal and also left and right buttons for sequential traversal. Page number total, the current page, and the next page are calculated dynamically so that the pages contained in separate PHP ID urls contain the baked goods fetched with mySQL from the database, and the website does not allow null page crossing (going to a non-existent next page)
 * Databases are locked from the public and require connections via credentials using OOP to create a streamlined verification process and framework
 * Database-inherited objects can access the database with mySQL from PHP to add, delete, edit, and show entries, while interactively and intuitively letting the user know the actions performed.
 * Users can create accounts, some of which can be given admin access, to log in to use the website and view certain pages with memoized credential keys
