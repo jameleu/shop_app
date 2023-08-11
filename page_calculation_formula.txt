@@ -1,0 +1,6 @@
+most important file here: pagination.class.php in private/classes
+
+SQL OFFSET: offset = items_per_page * curr_page - 1
+    -1 due to pages starting at index 0, or page 0, and not needing any offset
+
+SQL LIMIT: num displayed = items per page
